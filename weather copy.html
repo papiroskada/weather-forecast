@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>☀️Weatherman</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+        <div class="heading">Weather forecast</div>
+      </header>
+      
+      <div>
+      <form class="serching" id="searching-form">
+        <input
+          class="form"
+          type="taxt"
+          placeholder="Enter the city"
+          id="enter-city"
+        />
+        <input class="search" type="submit" value="Search" />
+       
+      </form>
+
+     
+</div>
+      <div class="row align-items-start column">
+        <div class="col first">
+          <div class="header">
+            <span class="emojiOfTheDay">☀️</span>
+            <span class="city">City</span>
+          </div>
+
+          <div class="today">
+            <span class="todayDate">13.06.22</span><br />
+          
+              <span id="current-day">Monday</span>
+              <span id="current-hours">10</span></span>
+          </div>
+
+          <div class="data">
+            <span class="indicators">Temperature:</span>
+            <span class="indicatorsResult" >
+              <span  id="temperature">24</span>
+              <a href="#" id="celsius">°C</a>|<a href="#" id="fahrenheit">°F</a>
+            </span>
+          </div>
+
+          <div class="data">
+            <span class="indicators">Wind: </span>
+            <span class="indicatorsResult"  id="wind">2 km/h</span>
+          </div>
+         
+          <div class="data">
+            <span class="indicators">Humidity:</span>
+            <span class="indicatorsResult" id="humidity">25%</span>
+          </div>
+        </div>
+        <div class="col third">
+          <div class="day">
+            Tuesday ⛅<br />
+            28°C
+          </div>
+          <div class="day">
+            Wednesday ☀️<br />
+            20°C
+          </div>
+          <div class="day">
+            Thursday ☁️<br />
+            18°C
+          </div>
+          <div class="day">
+            Friday ☀️<br />
+            15°C
+          </div>
+          <div class="day">
+            Saturday 🌧️<br />
+            7°C
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
