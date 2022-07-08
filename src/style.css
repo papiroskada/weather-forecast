@@ -2,7 +2,7 @@ body {
   background: rgb(209, 243, 255);
 }
 .container {
-  margin: 30px auto;
+  margin: 20px auto 0;
   max-height: 70%;
   max-width: 900px;
   padding: 40px;
@@ -145,4 +145,10 @@ body {
 }
 .main-body {
   margin: 0 0 50px;
+}
+.githubLink {
+  margin: auto;
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
 }
